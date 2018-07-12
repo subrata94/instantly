@@ -5,7 +5,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'assets')+'/build',
         filename: 'bundle.js',
-        // publicPath: '/build/',
+        // publicPath: path.resolve(__dirname, 'assets'),
     },
     mode: 'development',
     module: {
@@ -23,7 +23,7 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
-        contentBase: path.join(__dirname, 'src'),
+        contentBase: path.join(__dirname, 'assets'),
         hot: true,
         inline: true
     }
