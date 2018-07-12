@@ -3,9 +3,9 @@ const path = require('path');
 module.exports = {
     entry: './src/app/app.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'assets')+'/build',
         filename: 'bundle.js',
-        // publicPath: path.resolve(__dirname, 'build')+"/",
+        // publicPath: '/build/',
     },
     mode: 'development',
     module: {
@@ -20,7 +20,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [' ','.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     devServer: {
         contentBase: path.join(__dirname, 'src'),
