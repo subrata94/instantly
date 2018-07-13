@@ -5,7 +5,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'assets')+'/build',
         filename: 'bundle.js',
-        // publicPath: path.resolve(__dirname, 'assets'),
+        publicPath: '/build',
     },
     mode: 'development',
     module: {
@@ -25,6 +25,8 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'assets'),
         hot: true,
-        inline: true
+        inline: true,
+        host: '0.0.0.0',
+        port: 3000
     }
 };
