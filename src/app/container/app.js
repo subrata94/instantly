@@ -1,32 +1,27 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { connect } from "react-redux";
+import { BrowserRouter } from 'react-router-dom';
+// import { connect } from "react-redux";
+
+import {Navigation} from "../components/superComponents/navigation";
 
 class App extends Component{
-
     render(){
         return (
-            <div className="abc">Hello there!</div>
+            <div className="abc">
+                <BrowserRouter>
+                    <Navigation />
+                </BrowserRouter>
+            </div>
         ); 
     }
 };
 
-class App2 extends Component{
-
-    render(){
-        return (
-            <div className="abc">Hello there1111111!</div>
-        ); 
-    }
-};
-
-
-const mapStateToProps = state => {
-	return {
-		contact : state.contacts.users
-	}
-};
+// const mapStateToProps = state => {
+// 	return {
+// 		contact : state.contacts.users
+// 	}
+// };
 
 
 render(<App />, window.document.getElementById('app'));
-render(<App2 />, window.document.getElementById('app2'));

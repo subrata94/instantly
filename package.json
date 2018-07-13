@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html assets/index.html && webpack-dev-server --hot",
+    "build": "webpack -d && cp src/index.html assets/index.html && webpack-dev-server --hot --history-api-fallback",
     "build:prod": "webpack -p && cp src/index.html assets/index.html"
   },
   "author": "Subrata Debnath",
@@ -15,6 +15,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
   },
