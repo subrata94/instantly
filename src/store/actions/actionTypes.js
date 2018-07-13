@@ -1,0 +1,5 @@
+export default { 
+    SHOW_CONTACT : 'SHOW_CONTACT',
+    HIDE_CONTACT : 'HIDE_CONTACT',
+    BLOCK_CONTACT : 'BLOCK_CONTACT',
+}
