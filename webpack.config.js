@@ -2,12 +2,12 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        'app': './src/app/app.js',
-        'app1': './src/app/app1.js',
+        'app': './src/app/container/app.js',
+        // 'app1': './src/app/app1.js',
     },
     output: {
         path: path.resolve(__dirname, 'assets')+'/build',
-        filename: '[name].bundle.js',
+        filename: '[name].bundle.js', // [name] will fetch the 'key-name' from the entry{} objects
         publicPath: '/build',
     },
     mode: 'development',
