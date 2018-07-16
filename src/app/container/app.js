@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { BrowserRouter } from 'react-router-dom';
-// import { connect } from "react-redux";
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { connect } from "react-redux";
 
-import {Navigation} from "../components/superComponents/navigation";
+import {Navigation} from "../components/dumbComponents/navigation";
 
 class App extends Component{
     render(){
@@ -17,11 +17,11 @@ class App extends Component{
     }
 };
 
-// const mapStateToProps = state => {
-// 	return {
-// 		contact : state.contacts.users
-// 	}
-// };
+const mapStateToProps = state => {
+	return {
+		contact : state.contacts.users
+	}
+};
 
 
 render(<App />, window.document.getElementById('app'));

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html assets/index.html && webpack-dev-server --hot --history-api-fallback",
+    "build": "webpack -d && cp src/index.html assets/index.html && webpack-dev-server --hot",
     "build:prod": "webpack -p && cp src/index.html assets/index.html"
   },
   "author": "Subrata Debnath",
